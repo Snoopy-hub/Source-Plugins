@@ -12,12 +12,16 @@ set(
 	${CMAKE_CURRENT_SOURCE_DIR}/hl2sdk-l4d2/public/tier1
 	${CMAKE_CURRENT_SOURCE_DIR}/hl2sdk-l4d2/public/vstdlib
 )
+link_directories(
+	${CMAKE_CURRENT_SOURCE_DIR}/hl2sdk-l4d2/lib/linux
+)
 set(
 	library_dependencies
-	${CMAKE_CURRENT_SOURCE_DIR}/hl2sdk-l4d2/lib/public/tier0.lib
-	${CMAKE_CURRENT_SOURCE_DIR}/hl2sdk-l4d2/lib/public/tier1.lib
-	${CMAKE_CURRENT_SOURCE_DIR}/hl2sdk-l4d2/lib/public/vstdlib.lib
+	libtier0_srv.so
+	libvstdlib_srv.so
+	-l:tier1_i486.a
 )
+
 set(
     definitions
 	SOURCE_ENGINE=9

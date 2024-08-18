@@ -9,8 +9,8 @@
             "installDir": "${sourceDir}/out/install/${presetName}",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
-                "CMAKE_C_FLAGS": "-m32 -fno-strict-aliasing -fno-exceptions -Wno-non-virtual-dtor",
-                "CMAKE_CXX_FLAGS": "-m32 -fno-strict-aliasing -fno-exceptions -Wno-non-virtual-dtor -lstdc++"
+                "CMAKE_C_FLAGS": "-m32 -fno-strict-aliasing -msse -lm -ldl",
+                "CMAKE_CXX_FLAGS": "-m32 -fno-strict-aliasing -fno-exceptions -Wno-non-virtual-dtor -msse -lm -ldl"
             },
             "condition": {
                 "type": "equals",
@@ -26,8 +26,8 @@
             "installDir": "${sourceDir}/out/install/${presetName}",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release",
-                "CMAKE_C_FLAGS": "-m32 -fno-strict-aliasing -fno-exceptions -Wno-non-virtual-dtor",
-                "CMAKE_CXX_FLAGS": "-m32 -fno-strict-aliasing -fno-exceptions -Wno-non-virtual-dtor -lstdc++"
+                "CMAKE_C_FLAGS": "-m32 -fno-strict-aliasing -msse -O2 -lm -ldl",
+                "CMAKE_CXX_FLAGS": "-m32 -fno-strict-aliasing -fno-exceptions -Wno-non-virtual-dtor -msse -O2 -lm -ldl"
             },
             "condition": {
                 "type": "equals",

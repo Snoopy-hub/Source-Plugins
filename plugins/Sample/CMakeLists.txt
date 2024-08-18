@@ -10,7 +10,6 @@ set_property(TARGET Sample PROPERTY CXX_STANDARD 14)
 set_target_properties(Sample PROPERTIES PREFIX "")
 
 include_directories(${directory_dependencies})
-
 target_link_libraries(Sample ${library_dependencies})
 
 list(APPEND ${definitions} SAMPLE_MM_EXPORTS)
