@@ -5,7 +5,7 @@
 	sample_mm.h
 	sample_mm.cpp
 )
-
+configure_file(sample_mm.vdf sample_mm.vdf COPYONLY)
 set_property(TARGET Sample PROPERTY CXX_STANDARD 14)
 set_target_properties(Sample PROPERTIES PREFIX "")
 
