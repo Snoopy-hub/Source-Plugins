@@ -1,0 +1,8 @@
+[submodule "hl2sdk-l4d2"]
+	path = hl2sdk-l4d2
+	url = https://github.com/alliedmodders/hl2sdk.git
+	branch = l4d2
+[submodule "metamod-source"]
+	path = metamod-source
+	url = https://github.com/alliedmodders/metamod-source.git
+	branch = master

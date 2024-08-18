@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/metamod-source/core",
+                "${workspaceFolder}/metamod-source/core/sourcehook",
+                "${workspaceFolder}/hl2sdk-l4d2/public",
+                "${workspaceFolder}/hl2sdk-l4d2/public/engine",
+                "${workspaceFolder}/hl2sdk-l4d2/public/game/server",
+                "${workspaceFolder}/hl2sdk-l4d2/public/tier0",
+                "${workspaceFolder}/hl2sdk-l4d2/public/tier1",
+                "${workspaceFolder}/hl2sdk-l4d2/public/vstdlib"
+            ],
+            "defines": [
+                "SAMPLE_MM_EXPORTS",
+                "SOURCE_ENGINE=9",
+                "_LINUX",
+                "stricmp=strcasecmp",
+                "_vsnprintf=vsnprintf",
+                "SE_EPISODE1=1",
+                "SE_DARKMESSIAH=2",
+                "SE_ORANGEBOX=3",
+                "SE_BLOODYGOODTIME=4",
+                "SE_EYE=5",
+                "SE_CSS=6",
+                "SE_ORANGEBOXVALVE=7",
+                "SE_LEFT4DEAD=8",
+                "SE_LEFT4DEAD2=9",
+                "SE_ALIENSWARM=10",
+                "SE_PORTAL2=1",
+                "SE_CSGO=12"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
